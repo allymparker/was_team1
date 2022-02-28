@@ -6,7 +6,7 @@ metadata:
   name: nginx
   namespace: team1
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -20,6 +20,5 @@ spec:
       containers:
       - image: nginx
         name: nginx
-        # resources: 
-          # limits:
-            # cpu: 1.5Gi
+        resources: 
+          limits:
