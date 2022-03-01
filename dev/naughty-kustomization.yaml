@@ -4,7 +4,7 @@ metadata:
   name: team1
   namespace: naughty
 spec:
-  interval: 1m0s
+  interval: 5s
   path: ./naughty
   prune: false
   serviceAccountName: team1
