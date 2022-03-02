@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-  name: nginx
-  namespace: team1
+    app: team1-app
+  name: team1-app
+  namespace: apps1
 spec:
   replicas: 2
   selector:
@@ -18,8 +18,8 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
-        name: nginx
-        resources: 
-          limits:
-            cpu: "100m"
+        - image: nginx
+          name: nginx
+          resources:
+            limits:
+              cpu: "100m"
